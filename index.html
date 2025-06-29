@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Psychologist</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.8);
+            height: 100%;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background-color: #0070ba;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .button.google {
+            background-color: #34a853;
+        }
+        .form {
+            margin-top: 20px;
+        }
+        textarea, input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h1>AI PSYCHOLOGIST</h1>
+            <h2>A Quiet Haven for the Mind</h2>
+            <a class="button google" href="#" onclick="alert('Приложение появится через 2-4 месяца. Следите за новостями!')">Скачать в Google Play</a>
+            <a class="button" href="https://www.paypal.com/donate/?hosted_button_id=B3P4QU737M72Q" target="_blank">Поддержать через PayPal</a>
+            <div class="form">
+                <textarea placeholder="Ваше сообщение..."></textarea>
+                <input type="email" placeholder="Email для ответа (необязательно)">
+                <button class="button">Отправить</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
