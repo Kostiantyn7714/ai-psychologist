@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Psychologist — Тихая гавань чистого разума</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e0f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #00a0a0;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        .translate {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .container {
+            padding: 2em;
+            max-width: 800px;
+            margin: auto;
+        }
+        .button {
+            display: inline-block;
+            padding: 1em;
+            margin: 1em;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .google-play {
+            background-color: #34A853;
+        }
+        .paypal {
+            background-color: #003087;
+        }
+        form {
+            margin-top: 2em;
+        }
+        textarea, input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+        .note {
+            font-size: 0.9em;
+            color: gray;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Psychologist — Тихая гавань чистого разума</h1>
+    </header>
+
+    <div class="translate">
+        <select onchange="changeLanguage(this)">
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
+            <option value="fr">Français</option>
+            <option value="zh">中文</option>
+            <option value="ar">العربية</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <a href="#" class="button google-play">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" height="20" style="vertical-align: middle;">
+            Скачать на Google Play
+        </a>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=B3P4QU737M72Q" class="button paypal">
+            <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal" height="20" style="vertical-align: middle;">
+            Поддержать нас
+        </a>
+
+        <form>
+            <label for="message">Оставьте сообщение</label><br>
+            <textarea id="message" placeholder="Ваше сообщение..." rows="5"></textarea><br>
+            <input type="email" placeholder="Ваш Email (если хотите получить ответ)"><br>
+            <div class="note">Сообщения сохраняются внутри сайта. Видны только разработчику.</div>
+        </form>
+    </div>
+
+    <script>
+        function changeLanguage(select) {
+            const lang = select.value;
+            const url = `https://translate.google.com/translate?sl=auto&tl=${lang}&u=` + window.location.href;
+            window.open(url, "_blank");
+        }
+    </script>
+</body>
+</html>
